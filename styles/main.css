@@ -132,6 +132,7 @@ nav li a:hover {
 .close line:last-child {
   transform: rotate(-135deg);
 }
+
 h1 {
   font-family: 'Quattrocento', 'sans-serif';
   color: var(--heading-1-color);
@@ -294,9 +295,7 @@ span.inline_SVG_target {
   z-index: 100;
   background-color: black;
 }
-.close .loader-wrapper {
-  display: fixed;
-}
+
 .loader-wrapper .text {
   position: absolute;
   bottom: 20rem;
