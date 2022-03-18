@@ -403,7 +403,7 @@ span.inline_SVG_target {
     font-size: 1.5rem;
   }
   .hero img {
-      object-fit: contain;
+      object-fit: cover;
   }
   aside {
    
