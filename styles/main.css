@@ -56,18 +56,84 @@ section {
   padding-right: 1rem;
 }
   
-  
+
 
 nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-bottom: 4rem;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #711f21;
+  padding: 6rem 2rem 0;
 }
+/* basic <ul> menu setup */
 nav ul {
-  display: flex;
-  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
 }
 
+nav li {
+  border-bottom: 1px solid #aaa;
+}
 
+nav li:last-child {
+  border: none;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 1em;
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #711f21;
+  z-index: 2;
+}
+
+.menu-icon line {
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  transform-origin: center;
+  transition: transform 300ms ease;
+}
+
+.menu-icon line:first-child {
+  transform: translateY(16%);
+}
+
+.menu-icon line:last-child {
+  transform: translateY(-16%);
+}
+/* JavaScript toggles a "close" class on the <nav> when the menu-icon is clicked */
+.close nav {
+  display: block;
+}
+
+.close line:first-child {
+  transform: rotate(135deg);
+}
+
+.close line:last-child {
+  transform: rotate(-135deg);
+}
 h1 {
   font-family: 'Quattrocento', 'sans-serif';
   color: var(--heading-1-color);
@@ -101,12 +167,7 @@ aside {
   
   
 }
-aside ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-}
+
 footer h3 {
   display: flex;
   /* justify-content: center; */
@@ -358,6 +419,9 @@ span.inline_SVG_target {
   .hero .text-overlay {
     font-size: 1.5rem;
   }
+  aside {
+    max-width: 599px;
+  }
 }
 /* I picked an arbitrary breakpoint for "wider than mobile" */
 @media (min-width: 600px) {
@@ -381,6 +445,37 @@ span.inline_SVG_target {
   }
   .panel .left {
     order: -1;
+  }
+  .hero {
+    order: -1;
+  }
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    margin: 0 0 3rem;
+    padding: 0;
+  }
+
+  nav ul {
+    flex: 1 0 auto;
+    display: flex;
+  }
+
+  nav li {
+    flex: 1 0 0;
+    text-align: center;
+    border: none;
+  }
+
+  nav li a {
+    color: #000;
   }
 }
 @media (min-width: 600px) {

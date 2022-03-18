@@ -19,18 +19,27 @@
         width: 50px;
     }
 </style>
+<header>
+    <div class="menu-icon">
+        <svg viewbox="0 0 60 60">
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        </svg>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li> <a href="../about/">About</a> </li>
+            <li> <a>Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
 <body class="form-body">
     <div class="form-text">
         <h1 class="form-header">Survey about a <img class="house_icon" src="../images/house_icon.jpg" alt=""> of God.
         </h1>
-        <nav>
-            <ul>
-                <li><a href="../">Home</a></li>
-                <li> <a href="../about/">About</a> </li>
-                <li> <a>Contact</a></li>
-            </ul>
-        </nav>
+
     </div>
     <div class="loader-wrapper">
         <div class="loader">
@@ -40,7 +49,13 @@
         </div>
         <div class="text">LOADING...</div>
     </div>
+    <script>
+        const header = document.querySelector("header");
 
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+            header.classList.toggle("close");
+        });
+    </script>
 </body>
 
 </html>
