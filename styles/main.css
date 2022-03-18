@@ -189,6 +189,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 .panel {
   display: flex;
   flex-direction: column;
@@ -197,6 +198,8 @@ img {
 .panel  .image-wrapper {
   /* make sure the image is dispalyed first   */
   order: -1;
+  
+  
 }
 
 .panel > .text-content {
@@ -368,6 +371,7 @@ span.inline_SVG_target {
   .panel {
     flex-direction: row;
     gap: 2rem;
+    align-items: center;
 
   }
 
