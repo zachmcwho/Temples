@@ -407,7 +407,8 @@ span.inline_SVG_target {
       object-fit: contain;
   }
   aside {
-    max-width: 599px;
+   
+    overflow: hidden;
   }
 }
 /* I picked an arbitrary breakpoint for "wider than mobile" */
