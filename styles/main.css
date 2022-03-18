@@ -10,15 +10,6 @@
   /* #F0FFF0 */
 }
  
-
-
-.hero img {
-  max-width: 1600px;
-  width: 100%;
-  
-
-}
-
 a {
   text-decoration: none;
 
@@ -105,7 +96,7 @@ hr {
 
 aside {
   width: 100%;
-  background-color: green;
+  /* background-color: green; */
  margin-bottom: 4rem;
   
   
@@ -134,6 +125,13 @@ footer ul {
 .hero h1 {
   margin: 0;
 }
+.hero img {
+  max-width: 1600px;
+  width: 100%;
+  
+
+}
+
 .hero .text-overlay {
   position: absolute;
  
@@ -141,8 +139,6 @@ footer ul {
   font-size: 3rem;
 
 }
-
-
 
 .button {
   display: inline-block;
@@ -234,9 +230,6 @@ img {
 .cards .text-overlay:hover {
   opacity: 1;
 }
-
-
-
 
 svg.greencross {
   height: 20px;
