@@ -203,29 +203,6 @@ img {
   align-self: center;
 }
 
-/* I picked an arbitrary breakpoint for "wider than mobile" */
-@media (min-width: 600px) {
-  .panel {
-    flex-direction: row;
-    gap: 2rem;
-
-  }
-
-  /* use flex-basis (third value in the flex property) to proportionally size the text and image   */
-  .panel > .text-content {
-    flex: 1 1 40%;
-  }
-
-  .panel > .image-wrapper {
-    flex: 1 1 60%;
-    /* reset the order from mobile view */
-    order: 0;
-   
-  }
-  .panel .left {
-    order: -1;
-  }
-}
 
 .cards {
   display: flex;
@@ -255,36 +232,8 @@ img {
   opacity: 1;
 }
 
-@media (max-width: 599px) {
-  .cards {
-    flex-direction: column;
-    gap: 1rem;
-    
-  }
-  .hero .text-overlay {
-    font-size: 1.5rem;
-  }
-}
 
-@media (min-width: 600px) {
-  .cards {
-    flex-wrap: wrap;
-    flex-direction: row;
 
-  }
-  .card {
-    flex: 1 1 40%;
-  }
-  .hero .text-overlay {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 850px) {
-  .cards {
-    flex-wrap: nowrap;
-  }
-}
 
 svg.greencross {
   height: 20px;
@@ -299,12 +248,6 @@ span.inline_SVG_target {
   position: relative;
 }
 
-.form-text {
-  
-}
-.form-header {
-  
-}
 .loader-wrapper {
   position: relative;
   width: 100%;
@@ -410,4 +353,57 @@ span.inline_SVG_target {
     width: 0px;
   }
 }
+@media (max-width: 599px) {
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+  .hero .text-overlay {
+    font-size: 1.5rem;
+  }
+}
+/* I picked an arbitrary breakpoint for "wider than mobile" */
+@media (min-width: 600px) {
+  .panel {
+    flex-direction: row;
+    gap: 2rem;
+
+  }
+
+  /* use flex-basis (third value in the flex property) to proportionally size the text and image   */
+  .panel > .text-content {
+    flex: 1 1 40%;
+  }
+
+  .panel > .image-wrapper {
+    flex: 1 1 60%;
+    /* reset the order from mobile view */
+    order: 0;
+   
+  }
+  .panel .left {
+    order: -1;
+  }
+}
+@media (min-width: 600px) {
+  .cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  .card {
+    flex: 1 1 40%;
+  }
+  .hero .text-overlay {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 850px) {
+  .cards {
+    flex-wrap: nowrap;
+  }
+}
+
+
 
