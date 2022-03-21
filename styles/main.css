@@ -9,7 +9,9 @@
   --background-color: lightcyan;
   /* #F0FFF0 */
 }
- 
+ form {
+   background-color: teal;
+ }
 a {
   text-decoration: none;
 
@@ -33,7 +35,7 @@ img.house_icon {
   color: var(--text-color);
   line-height: 1.5;
   font-size: 1.3rem;
-  background-color: tiel;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
