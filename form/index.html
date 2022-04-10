@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Fjalla+One&family=Pacifico&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/formstyles.css">
 </head>
 <style>
     img.house_icon {
@@ -20,12 +20,12 @@
     }
 </style>
 <header>
-    <div class="form menu-icon">
+    <!-- <div class="form menu-icon">
         <svg viewbox="0 0 60 60">
             <line x1="5%" y1="50%" x2="95%" y2="50%" />
             <line x1="5%" y1="50%" x2="95%" y2="50%" />
         </svg>
-    </div>
+    </div> -->
     <nav>
         <ul>
             <li><a href="../">Home</a></li>
@@ -35,12 +35,76 @@
     </nav>
 </header>
 
-<body class="form-body">
+<body>
     <div class="form-text">
-        <h1 class="form-header">Survey about a <img class="house_icon" src="../images/house_icon.jpg" alt=""> of God.
+        <h1 class="form-header">Survey about a <img class="house_icon" src="../images/house_icon.jpg" alt=""> of
+            God.
         </h1>
-
     </div>
+    <section>
+        <h2>Vegemite survey</h2>
+        <form>
+            <label for="name">Full name:</label>
+
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="month">Your favorite month:</label>
+            <input type="month" name="month" id="month">
+
+            <fieldset>
+                <legend>Which of the following would you guess are ingredients of Vegemite? <em>(Check all that
+                        apply)</em></legend>
+
+                <input type="checkbox" id="wombat" name="ingredients" value="wombat">
+                <label for="wombat">Wombat</label>
+
+                <input type="checkbox" id="kiwi-feet" name="ingredients" value="kiwi-feet">
+                <label for="kiwi-feet">Dried kiwi feet</label>
+
+                <input type="checkbox" id="eucalyptus" name="ingredients" value="eucalyptus">
+                <label for="eucalyptus">Eucalyptus tincture</label>
+
+                <input type="checkbox" id="emu" name="ingredients" value="emu">
+                <label for="emu">Emu oil</label>
+
+                <input type="checkbox" id="kanga" name="ingredients" value="kanga-claw">
+                <label for="kanga">Kangaroo claw</label>
+
+                <input type="checkbox" id="platy" name="ingredients" value="platypus-liver">
+                <label for="platy">Platypus liver</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How would you describe the taste of Vegemite?</legend>
+
+                <input type="radio" name="taste" id="asphalt" value="asphalt">
+                <label for="asphalt">Powdered asphalt</label>
+
+                <input type="radio" name="taste" id="tar" value="tar">
+                <label for="tar">Lukewarm tar</label>
+
+                <input type="radio" name="taste" id="salt" value="salty">
+                <label for="salt">Salty</label>
+
+                <input type="radio" name="taste" id="delicious" value="delicious">
+                <label for="delicious">Amazeballs</label>
+            </fieldset>
+
+            <label for="haiku">Compose a haiku about Vegemite:</label>
+            <textarea name="haiku" id="haiku" rows="10" placeholder="5/7/5 syllable count"></textarea>
+
+            <button>Submit Now</button>
+
+        </form>
+    </section>
+
+    <!-- </div>
     <div class="loader-wrapper">
         <div class="loader">
             <div class="ball"></div>
@@ -55,7 +119,7 @@
         document.querySelector(".menu-icon").addEventListener("click", () => {
             header.classList.toggle("close");
         });
-    </script>
+    </script> -->
 </body>
 <footer></footer>
 
