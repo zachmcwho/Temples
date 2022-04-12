@@ -188,8 +188,7 @@ footer ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  
 }
 .hero h1 {
   margin: 0;
@@ -293,111 +292,15 @@ span.inline_SVG_target {
   position: relative;
 }
 
-.loader-wrapper {
-  position: relative;
+.hero video {
   width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: black;
 }
 
-.loader-wrapper .text {
-  position: absolute;
-  bottom: 20rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin: 0 0 100px;
-  color: rgba(255, 255, 255, .7);
-  text-transform: uppercase;
-  font-size: 11px;
-  font-family: sans-serif, helvetica;
-  letter-spacing: .5px;
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 24px;
-  border-left: 8px solid #fff;
-  border-right: 8px solid #fff;
+.hero {
+  height: 100vh;
   overflow: hidden;
 }
 
-.loader .ball {
-  height: 8px;
-  width: 0;
-  background: white;
-  position: relative;
-  margin: 0;
-}
-
-.loader .ball:nth-child(1) {
-  -webkit-animation: ball 2s ease-in-out infinite;
-  animation: ball 2s ease-in-out infinite;
-}
-
-.loader .ball:nth-child(2) {
-  -webkit-animation: ball 2s ease-in-out .1s infinite;
-  animation: ball 2s ease-in-out .1s infinite;
-}
-
-.loader .ball:nth-child(3) {
-  -webkit-animation: ball 2s ease-in-out .2s infinite;
-  animation: ball 2s ease-in-out .2s infinite;
-}
-
-@-webkit-keyframes ball {
-  0% {
-    left: 0;
-    width: 0px;
-  }
-  25% {
-    left: 0;
-    width: 300px;
-  }
-  50% {
-    left: 300px;
-    width: 0px;
-  }
-  75% {
-    left: 0;
-    width: 300px;
-  }
-  100% {
-    left: 0;
-    width: 0px;
-  }
-}
-
-@keyframes ball {
-  0% {
-    left: 0;
-    width: 0px;
-  }
-  25% {
-    left: 0;
-    width: 300px;
-  }
-  50% {
-    left: 300px;
-    width: 0px;
-  }
-  75% {
-    left: 0;
-    width: 300px;
-  }
-  100% {
-    left: 0;
-    width: 0px;
-  }
-}
 @media (max-width: 599px) {
   .cards {
     flex-direction: column;
