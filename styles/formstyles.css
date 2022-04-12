@@ -1,7 +1,7 @@
 :root {
-  --form-bg-color: #273c75;
-  --form-bg-color-light: #ffffdd;
-  --form-font-color: #fff;
+  --form-bg-color: white;
+  --form-bg-color-light: #f4c6c6;
+  --form-font-color: rgb(104, 102, 102);
 }
 
 * {
@@ -12,12 +12,22 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Nanum Gothic", sans-serif;
-  background-color: var(--form-bg-color);
+  
+  font-family: 'Pacifico', cursive;
+
+  font-weight: 200;
   color: var(--form-font-color);
   margin: 0 1rem;
 }
-
+.cursive {
+  font-family: cursive;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+}
+.bold {
+  color: #333;
+}
 section {
   max-width: 50rem;
   align-self: center;
@@ -41,6 +51,7 @@ form {
   grid-template-columns: 1fr;
   font-size: 1.4rem;
   line-height: 1.5;
+  
 }
 
 fieldset {
@@ -65,7 +76,7 @@ textarea {
 
 input:not([type="radio"]):not([type="checkbox"]),
 textarea {
-  background-color: #fff;
+  background-color: white;
   padding: 0.3rem;
 }
 
@@ -74,7 +85,7 @@ button {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   background-color: var(--form-bg-color);
-  color: var(--form-font-color);
+  color: pink;
   border: 2px solid var(--form-font-color);
   border-radius: 6px;
   margin-bottom: 3rem;
@@ -84,8 +95,8 @@ button {
 
 button:hover,
 button:focus {
-  color: var(--form-bg-color);
-  background-color: var(--form-bg-color-light);
+  color: rgb(248, 130, 150);
+  background-color: white;
 }
 
 /* checkboxes and radios will have their own hover and focus states in next example. you don't need to add the :not() if you place your button hover and focus states below this */
@@ -93,7 +104,7 @@ input:not([type="radio"]):not([type="checkbox"]):hover,
 input:not([type="radio"]):not([type="checkbox"]):focus,
 textarea:hover,
 textarea:focus {
-  outline: 1px solid yellow;
+  outline: 1px solid pink;
   background-color: var(--form-bg-color-light);
 }
 
@@ -125,4 +136,26 @@ textarea:focus {
 
 .form-header {
   justify-self: center;
+}
+nav {
+  font-size: 1.3rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+a:visited {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.headerthing {
+  height: 50vh;
+  width: 100%;
+  
 }

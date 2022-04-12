@@ -20,12 +20,8 @@
     }
 </style>
 <header>
-    <!-- <div class="form menu-icon">
-        <svg viewbox="0 0 60 60">
-            <line x1="5%" y1="50%" x2="95%" y2="50%" />
-            <line x1="5%" y1="50%" x2="95%" y2="50%" />
-        </svg>
-    </div> -->
+
+    </div>
     <nav>
         <ul>
             <li><a href="../">Home</a></li>
@@ -35,14 +31,14 @@
     </nav>
 </header>
 
-<body>
+<body style="background-image: url('../images/pinknew.jpg')">
     <div class="form-text">
-        <h1 class="form-header">Survey about a <img class="house_icon" src="../images/house_icon.jpg" alt=""> of
+        <h1 class="form-header bold">Survey about a <img class="house_icon" src="../images/house_icon.jpg" alt=""> of
             God.
         </h1>
     </div>
     <section>
-        <h2>Vegemite survey</h2>
+        <h2 class="bold">Temple survey</h2>
         <form>
             <label for="name">Full name:</label>
 
@@ -54,49 +50,47 @@
             <label for="phone">Phone number:</label>
             <input type="tel" name="phone" id="phone">
 
-            <label for="month">Your favorite month:</label>
-            <input type="month" name="month" id="month">
 
             <fieldset>
-                <legend>Which of the following would you guess are ingredients of Vegemite? <em>(Check all that
+                <legend class="cursive">Which temples would you like to see featured on this page? <em>(Check all that
                         apply)</em></legend>
 
-                <input type="checkbox" id="wombat" name="ingredients" value="wombat">
-                <label for="wombat">Wombat</label>
+                <input type="checkbox" id="Kona" name="featured" value="Kona">
+                <label for="Kona">Kona Hawaii Temple</label>
 
-                <input type="checkbox" id="kiwi-feet" name="ingredients" value="kiwi-feet">
-                <label for="kiwi-feet">Dried kiwi feet</label>
+                <input type="checkbox" id="Kona" name="featured" value="Kona">
+                <label for="Kona">Kona England Temple</label>
 
-                <input type="checkbox" id="eucalyptus" name="ingredients" value="eucalyptus">
-                <label for="eucalyptus">Eucalyptus tincture</label>
+                <input type="checkbox" id="LosAngeles" name="featured" value="LosAngeles">
+                <label for="LosAngeles">Los Angeles California Temple</label>
 
-                <input type="checkbox" id="emu" name="ingredients" value="emu">
-                <label for="emu">Emu oil</label>
+                <input type="checkbox" id="Tijuana" name="featured" value="Tijuana">
+                <label for="Tijuana">Tijuana Mexico Temple</label>
 
-                <input type="checkbox" id="kanga" name="ingredients" value="kanga-claw">
-                <label for="kanga">Kangaroo claw</label>
+                <input type="checkbox" id="Kiribati" name="featured" value="Kiribati">
+                <label for="Kiribati">Tarawa Kiribati Temple</label>
 
-                <input type="checkbox" id="platy" name="ingredients" value="platypus-liver">
-                <label for="platy">Platypus liver</label>
+                <input type="checkbox" id="Idaho" name="featured" value="Idaho">
+                <label for="Idaho">Twin Falls Idaho Temple</label>
             </fieldset>
 
             <fieldset>
-                <legend>How would you describe the taste of Vegemite?</legend>
+                <legend class="cursive">Which is your favorite temple?</legend>
 
-                <input type="radio" name="taste" id="asphalt" value="asphalt">
-                <label for="asphalt">Powdered asphalt</label>
+                <input type="radio" name="favorite" id="SaltLake" value="SaltLake">
+                <label for="SaltLake">Salt Lake</label>
 
-                <input type="radio" name="taste" id="tar" value="tar">
-                <label for="tar">Lukewarm tar</label>
+                <input type="radio" name="favorite" id="SanDiego" value="SanDiego">
+                <label for="SanDiego">San Diego</label>
 
-                <input type="radio" name="taste" id="salt" value="salty">
-                <label for="salt">Salty</label>
+                <input type="radio" name="favorite" id="Tokyo" value="Tokyo">
+                <label for="Tokyo">Tokyo, Japan</label>
 
-                <input type="radio" name="taste" id="delicious" value="delicious">
-                <label for="delicious">Amazeballs</label>
+                <input type="radio" name="favorite" id="Manhattan" value="Manhattan">
+                <label for="Manhattan">Manhattan</label>
             </fieldset>
 
-            <label for="haiku">Compose a haiku about Vegemite:</label>
+            <label class="cursive" for="haiku">Is there anything you would like to learn about the temple?</label>
             <textarea name="haiku" id="haiku" rows="10" placeholder="5/7/5 syllable count"></textarea>
 
             <button>Submit Now</button>

@@ -1,12 +1,12 @@
 :root {
-  --text-color: #333;
+  --text-color: rgba(109, 107, 107, 0.983);;
   --heading-1-color: white;
   --heading-2-color: #2F4F4F;
-  --heading-3-color: turquoise;
-  --button-background-color: #f4511e;
-  --button-color: #FFFFFF;
+  --heading-3-color: #333;
+  --button-background-color: white;
+  --button-color: rgb(247, 134, 153);
   --card-background-color: rgba(255, 120, 0, 0.8);
-  --background-color: rgb(222, 245, 245);
+  --background-color: rgb(246, 217, 217);
   /* #F0FFF0 */
 }
  form {
@@ -135,7 +135,7 @@ nav li a:hover {
 }
 
 h1 {
-  font-family: 'Quattrocento', 'sans-serif';
+  font-family: 'Pacifico', cursive;
   color: var(--heading-1-color);
 }
 /* font-family: 'Fjalla One', sans-serif; */
@@ -164,8 +164,7 @@ aside {
   width: 100%;
   /* background-color: green; */
  margin-bottom: 4rem;
-  
-  
+  overflow: hidden;
 }
 
 footer h3 {
@@ -455,6 +454,7 @@ span.inline_SVG_target {
     background-color: transparent;
     margin: 0 0 3rem;
     padding: 0;
+    font-family: 'Pacifico', cursive;
   }
 
   nav ul {
@@ -509,5 +509,11 @@ span.inline_SVG_target {
   }
 }
 
+img {
+  border: solid black 4px;
+}
 
+.cards img {
+  border: none;
+}
 
