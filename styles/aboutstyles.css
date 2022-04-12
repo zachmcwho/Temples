@@ -1,0 +1,13 @@
+.hero video {
+  max-width: 1600px;
+  
+  width: 100%;
+  
+
+}
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
