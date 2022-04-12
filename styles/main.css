@@ -189,16 +189,13 @@ footer ul {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 .hero h1 {
   margin: 0;
 }
-.hero video {
-  /* max-width: 1600px; */
-  
+.hero video { 
   width: 100%;
-  
-
 }
 
 
